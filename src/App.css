@@ -1,0 +1,132 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  min-height: 10vh;
+  display: flex;
+
+  font-size: calc(10px + 2vmin);
+  color: Black;
+  border: 10px solid pink;
+  background: linear-gradient(to bottom right, #FDFCFB, #E2D1C3);
+
+}
+.App-header h1 {
+  color: #28282b;
+  margin-left: 20px;
+}
+
+h1 {
+  color: white;
+  font-size: 32px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.App-link {
+  color: #61dafb;
+}
+.first {
+  background-position: center center;
+
+  width: 50%;
+  height: 90vh;
+  float: left;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+}
+.second {
+  width: 50%;
+  height: 90vh;
+  float: left;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.4);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}
+.overlay h1 {
+  font-size: 50px;
+}
+span {
+  display: block;
+}
+button {
+  background-color: rgb(241, 17, 17);
+  box-shadow: 0 5px 0 rgb(174, 35, 35);
+  margin-bottom: 20px;
+  height: 50px;
+  width: 20vh;
+  border: red;
+  border-radius: 20px;
+  color: aliceblue;
+  font-size: x-large;
+}
+button:active {
+  box-shadow: none;
+  transform: translateY(5px);
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(
+          0,
+          0,
+          0,
+          0.4
+  ); /* Darkens the whole screen with a 0.4 opacity black background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.modal h2 {
+  margin-bottom: 10px;
+}
+
+h3 {
+  color: black;
+  margin-left: 50%;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
